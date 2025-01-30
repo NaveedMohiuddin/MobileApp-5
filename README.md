@@ -1,7 +1,11 @@
 # CS 442 MP4: Battleships
 
 ## 1. Overview
+To run this mobile App in your PC clone this repository and install the required packages and run in terminal ```flutter run```
 
+This Mobile App is built according to the below requirements
+
+## Requirements
 For this machine problem, your task is to implement an application that interfaces with an existing RESTful service to allow users to register, log in, and play games of [Battleships](https://en.wikipedia.org/wiki/Battleship_(game)) against both human and computer opponents.
 
 The primary objective of this MP is to provide you with an opportunity to integrate a prototypical RESTful API into a Flutter application. To do this, you will need to study the provided REST API documentation and use asynchronous operations provided by the `http` package to communicate with the API.
@@ -192,33 +196,3 @@ All successful operations will result in an HTTP status code of `200`.
 ## 4. Testing
 
 We will be testing your application by building and running it as either a native macOS, Android, or iOS app. Your app should run without errors or warnings, and should behave as specified above.
-
-## 5. Grading
-
-This machine problem is worth 70 points. Your grade will be based on the following criteria:
-
-- 10 points: Users can register and log in.
-
-- 5 points: Session tokens are stored locally (between application restarts), and logging out expunges the token. If the token expires, the user is required to log in again.
-
-- 10 points: The game list page displays the list of games (active/matchmaking and completed separately) with all the required information correctly. The game list page can be refreshed manually.
-
-- 10 points: Starting a game displays a functional game board for ship placement. When 5 ships are placed, the game is started and the ships are submitted to the server.
-
-- 5 points: The game board is appropriately responsive.
-
-- 10 points: It is possible to start games with human opponents, and all supported types of AI opponents.
-
-- 10 points: The gameplay screen displays the game board and allows the user to play the game if it is their turn. The game board displays all the required information correctly (ships, wrecks, missed shots, sunk ships).
-
-- 5 points: The gameplay screen displays the appropriate information after a shot is played (invalid shot, miss, sunk ship, won game).
-
-- 5 points: The gameplay screen refreshes immediately after the user plays a shot against an AI opponent, and allows the user to play again if possible.
-
-If your code does not compile, you will receive a zero for the assignment. If your code compiles but does not meet the requirements, you will receive partial credit based on the extent to which it does.
-
-## 6. Submission
-
-To submit your machine problem, commit and push your code to the "main" branch in your private GitHub repository shared with us. You can make as many commits and pushes as needed; we will assess the most recent version of your code pushed before the deadline.
-
-If you plan to use late submission days, remember to fill out and submit the late day form (found on the course website) before the deadline.
